@@ -3,11 +3,12 @@ package com.example.demo.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.Course;
 import com.example.demo.exception.CourseNotFoundException;
 import com.example.demo.repositary.ICourseRepositary;
-
+@Service
 public class CourseServiceimpl implements ICourseService {
     @Autowired
 	private ICourseRepositary repo;
