@@ -7,7 +7,7 @@ import javax.persistence.Id;
 @Entity
 public class Course {
 	@Id
-	@GeneratedValue
+	
 	private Integer cid;
 	private String cname;
 	private Double cfee;
@@ -15,7 +15,7 @@ public class Course {
 	private Double discount;
 	private Double gst;
 	public Course(Integer cid, String cname, Double cfee, String ctype, Double discount, Double gst) {
-		super();
+		
 		this.cid = cid;
 		this.cname = cname;
 		this.cfee = cfee;
